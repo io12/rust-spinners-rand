@@ -1,0 +1,81 @@
+#![forbid(missing_docs)]
+
+//! Get a random `Spinners` from the `spinners` crate.
+
+use rand::seq::SliceRandom;
+use spinners::Spinners;
+
+/// Get a random `Spinners`
+pub fn rand_spinner() -> Spinners {
+    [
+        Spinners::Dots,
+        Spinners::Dots2,
+        Spinners::Dots3,
+        Spinners::Dots4,
+        Spinners::Dots5,
+        Spinners::Dots6,
+        Spinners::Dots7,
+        Spinners::Dots8,
+        Spinners::Dots9,
+        Spinners::Dots10,
+        Spinners::Dots11,
+        Spinners::Dots12,
+        Spinners::Line,
+        Spinners::Line2,
+        Spinners::Pipe,
+        Spinners::SimpleDots,
+        Spinners::SimpleDotsScrolling,
+        Spinners::Star,
+        Spinners::Star2,
+        Spinners::Flip,
+        Spinners::Hamburger,
+        Spinners::GrowVertical,
+        Spinners::GrowHorizontal,
+        Spinners::Balloon,
+        Spinners::Balloon2,
+        Spinners::Noise,
+        Spinners::Bounce,
+        Spinners::BoxBounce,
+        Spinners::BoxBounce2,
+        Spinners::Triangle,
+        Spinners::Arc,
+        Spinners::Circle,
+        Spinners::SquareCorners,
+        Spinners::CircleQuarters,
+        Spinners::CircleHalves,
+        Spinners::Squish,
+        Spinners::Toggle,
+        Spinners::Toggle2,
+        Spinners::Toggle3,
+        Spinners::Toggle4,
+        Spinners::Toggle5,
+        Spinners::Toggle6,
+        Spinners::Toggle7,
+        Spinners::Toggle8,
+        Spinners::Toggle9,
+        Spinners::Toggle10,
+        Spinners::Toggle11,
+        Spinners::Toggle12,
+        Spinners::Toggle13,
+        Spinners::Arrow,
+        Spinners::Arrow2,
+        Spinners::Arrow3,
+        Spinners::BouncingBar,
+        Spinners::BouncingBall,
+        Spinners::Smiley,
+        Spinners::Monkey,
+        Spinners::Hearts,
+        Spinners::Clock,
+        Spinners::Earth,
+        Spinners::Moon,
+        Spinners::Runner,
+        Spinners::Pong,
+        Spinners::Shark,
+        Spinners::Dqpb,
+        Spinners::Weather,
+        Spinners::Christmas,
+    ]
+    .choose(&mut rand::thread_rng())
+    .unwrap()
+    .clone()
+}
