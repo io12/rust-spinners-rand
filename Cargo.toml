@@ -6,6 +6,7 @@ edition = "2018"
 description = "Get a random `Spinners` from the `spinners` crate"
 license = "MIT"
 repository = "https://github.com/io12/rust-spinners-rand"
+documentation = "https://docs.rs/spinners-rand"
 
 [dependencies]
 spinners = "1.2.0"
