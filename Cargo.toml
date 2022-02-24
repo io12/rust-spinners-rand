@@ -9,5 +9,5 @@ repository = "https://github.com/io12/rust-spinners-rand"
 documentation = "https://docs.rs/spinners-rand"
 
 [dependencies]
-spinners = "2.0.0"
+spinners = "3.0.1"
 rand = "0.8.0"
