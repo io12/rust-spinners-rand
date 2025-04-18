@@ -10,4 +10,4 @@ documentation = "https://docs.rs/spinners-rand"
 
 [dependencies]
 spinners = "4.0.0"
-rand = "0.8.0"
+rand = "0.9.1"
